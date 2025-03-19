@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Flash Card</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="register">Đăng ký</string>
+    <string name="input_password">Vui lòng nhập mật khẩu</string>
+    <string name="input_email">Vui lòng nhập email</string>
+    <string name="forgot_password">Quên mật khẩu ?</string>
+    <string name="don_have_account">Không có tài khoản ? </string>
+    <string name="confirm_password">Nhập lại mật khẩu </string>
+    <string name="input_repassword">Xác nhận mật khẩu </string>
+    <string name="already_have_account">Đã có tài khoản ? </string>
+    <string name="confirm">Xác nhận </string>
+    <string name="back">Quay lại </string>
+    <string name="error_message">Vui lòng nhập đầy đủ thông tin</string>
+    <string name="login_successfully">Đăng nhập thành công</string>
+    <string name="login_fail">Đăng nhập thất bại</string>
+    <string name="incorrect_email">Email không hợp lệ</string>
+    <string name="do_not_match">Không trùng khớp</string>
+    <string name="register_successfully">Đăng ký thành công</string>
+    <string name="register_fail">Đăng ký thất bại</string>
+    <string name="check_your_email">Kiểm tra email của bạn</string>
+    <string name="level">Cấp độ</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="save">Lưu</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="setting_title">Cài đặt</string>
+    <string name="night_mode">Chế độ tối</string>
+    <string name="notifications">Cài đặt thông báo</string>
+    <string name="change_pass">Đổi mật khẩu</string>
+    <string name="help_center">Trung tâm hỗ trợ</string>
+    <string name="security">Bảo mật &amp; riêng tư</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="about">Về chúng tôi</string>
+
+    <!--Home-->
+    <string name="folders_title">Thư mục</string>
+    <string name="public_topic_title">Các chủ đề công khai chia sẻ cùng bạn!</string>
+    <string name="folder_describe">Hãy tạo một chủ đề mới và học nào!</string>
+
+    <string name="input_otp">Nhập mã otp</string>
+    <string name="wrong_pass">sai mật khẩu</string>
+    <string name="old_pass">Nhập mật khẩu cũ</string>
+    <string name="new_pass">Nhập mật khẩu mới</string>
+    <string name="renew_pass">Nhập lại mật khẩu mới</string>
+    <string name="name">Tên</string>
+    <string name="input_name">Vui lòng nhập tên</string>
+
+
+</resources>

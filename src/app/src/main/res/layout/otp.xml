@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_round_remove_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/eT_otp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="@string/input_otp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/alert"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/alert"
+        android:text="mã otp sai"
+        />
+    <TextView
+        android:id="@+id/backOtp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="@color/blue_400"
+        android:text="Gửi lại mã" />
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/submit"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="submit"
+        ></Button>
+
+</LinearLayout>

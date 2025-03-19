@@ -1,0 +1,70 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+<!--    </style>-->
+<!--</resources>-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for night mode. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/primaryDark</item>
+        <item name="colorPrimaryDark">@color/primaryDarkVariant</item>
+        <item name="colorAccent">@color/accentDark</item>
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+        <item name="android:windowBackground">@color/backgroundDark</item>
+        <item name="android:textColorHint">@color/textColorHintDark</item>
+        <item name="android:statusBarColor">@color/primaryDarkVariant</item>
+        <item name="android:navigationBarColor">@color/backgroundDark</item>
+        <item name="fontFamily">@font/varelaround_regular</item>
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#40128B</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="round_back">
+        <item name="android:background">@drawable/round_backdark10_20</item>
+    </style>
+    <style name="SETTING_SCREEN">
+        <item name="android:background">#40128B</item>
+    </style>
+    <style name="settings_title">
+        <item name="android:text">@string/setting_title</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="nightModeSwitch" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorControlActivated">@color/toggleActiveDark</item>
+        <item name="colorSwitchThumbNormal">@color/toggleThumbDark</item>
+        <item name="android:colorForeground">@color/toggleForegroundDark</item>
+    </style>
+    <style name="notificationsSwitch" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorControlActivated">@color/toggleActiveDark</item>
+        <item name="colorSwitchThumbNormal">@color/toggleThumbDark</item>
+        <item name="android:colorForeground">@color/toggleForegroundDark</item>
+    </style>
+<!--Home-->
+    <style name="folders_title">
+        <item name="android:text">@string/folders_title</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="public_topic_title">
+        <item name="android:text">@string/public_topic_title</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="folder_describe">
+        <item name="android:text">@string/folder_describe</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/night_mode</item>
+    </style>
+</resources>

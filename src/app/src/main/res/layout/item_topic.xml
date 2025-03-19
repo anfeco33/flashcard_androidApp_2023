@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+            <TextView
+                android:id="@+id/tv_topicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="topic name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/tv_wordCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wordCount"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="300dp"
+            android:drawableEnd="@drawable/ic_edit"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="20dp"
+
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

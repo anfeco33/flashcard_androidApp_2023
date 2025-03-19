@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/background_1">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:text="@string/login"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/eT_Email"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/input_email"
+        android:paddingLeft="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/eT_Password"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tV_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:autoLink="web"
+        android:layout_gravity="end"
+        android:linksClickable="true"
+        android:text="@string/forgot_password"
+        android:textColor="#72DDF7"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"/>
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textColor="@color/blue_200"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background_2"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

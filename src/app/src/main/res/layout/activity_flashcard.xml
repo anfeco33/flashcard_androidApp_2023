@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SETTING_SCREEN"
+    tools:context=".activity.FlashcardActivity">
+
+    <TextView
+        android:id="@+id/tvStudyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:text="progress"/>
+
+    <CheckBox
+        android:id="@+id/cbAutoPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tự động chuyển"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvStudyProgress" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="500dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_centerInParent="true"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Word"/>
+
+            <ImageButton
+                android:id="@+id/imgbSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/baseline_volume_up_24"/>
+
+            <TextView
+                android:id="@+id/tvDefinition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Definition"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pink_300"
+        android:text="HOÀN THÀNH" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SETTING_SCREEN"
+    tools:context=".activity.QuizActivity">
+
+    <TextView
+        android:id="@+id/tvStudyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:text="progress"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold|italic"
+        android:text="Câu hỏi"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/tvStudyProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageButton
+        android:id="@+id/imgbSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvQuestion"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_volume_up_24"/>
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/blue_200"
+        android:text="Lựa chọn 1"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/security"
+        android:text="Lựa chọn 2"
+        app:layout_constraintTop_toBottomOf="@id/btnOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:text="Lựa chọn 3"
+        android:backgroundTint="@color/toggleActiveDark"
+        app:layout_constraintTop_toBottomOf="@id/btnOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:text="Lựa chọn 4"
+        android:backgroundTint="@color/LavenderRose_50"
+        app:layout_constraintTop_toBottomOf="@id/btnOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="feedback"
+        android:textStyle="bold"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnOption4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/tvSuggest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Suggestion"
+        android:textStyle="bold"
+        android:textColor="@color/security"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvFeedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
